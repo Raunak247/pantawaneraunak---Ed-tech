@@ -1,0 +1,72 @@
+# Python virtual environment
+backend/bin/
+backend/lib/
+backend/include/
+backend/lib64/
+backend/__pycache__/
+backend/pyvenv.cfg
+venv/
+env/
+ENV/
+.env
+
+# Python byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Logs
+*.log
+logs/
+server.log
+
+# Database
+*.sqlite3
+*.db
+
+# Credentials and secrets
+firebase/credentials/*
+firebase/firebase-credentials.json
+*.pem
+*.key
+*.crt
+credentials/
+# Allow empty directory tracking with .gitkeep
+!firebase/credentials/.gitkeep
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.bak
+*.tmp
+*.temp
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/

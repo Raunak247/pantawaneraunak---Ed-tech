@@ -1,0 +1,380 @@
+{
+  "math_very_easy_1": {
+    "id": "math_very_easy_1",
+    "text": "What is 2 + 3?",
+    "options": ["3", "4", "5", "6"],
+    "correct_answer": "5",
+    "skill": "addition",
+    "subject": "maths",
+    "difficulty": "very_easy"
+  },
+  "math_very_easy_2": {
+    "id": "math_very_easy_2",
+    "text": "What is 10 - 5?",
+    "options": ["3", "5", "7", "10"],
+    "correct_answer": "5",
+    "skill": "subtraction",
+    "subject": "maths",
+    "difficulty": "very_easy"
+  },
+  "math_easy_1": {
+    "id": "math_easy_1",
+    "text": "What is 7 × 8?",
+    "options": ["54", "56", "64", "72"],
+    "correct_answer": "56",
+    "skill": "multiplication",
+    "subject": "maths",
+    "difficulty": "easy"
+  },
+  "math_easy_2": {
+    "id": "math_easy_2",
+    "text": "What is 45 ÷ 9?",
+    "options": ["4", "5", "6", "7"],
+    "correct_answer": "5",
+    "skill": "division",
+    "subject": "maths",
+    "difficulty": "easy"
+  },
+  "math_medium_1": {
+    "id": "math_medium_1",
+    "text": "Solve for x: 3x + 7 = 22",
+    "options": ["3", "5", "7", "9"],
+    "correct_answer": "5",
+    "skill": "algebra",
+    "subject": "maths",
+    "difficulty": "medium"
+  },
+  "math_medium_2": {
+    "id": "math_medium_2",
+    "text": "What is the area of a rectangle with length 8 and width 6?",
+    "options": ["24", "28", "48", "54"],
+    "correct_answer": "48",
+    "skill": "geometry",
+    "subject": "maths",
+    "difficulty": "medium"
+  },
+  "math_hard_1": {
+    "id": "math_hard_1",
+    "text": "If f(x) = 2x² + 3x - 5, what is f(2)?",
+    "options": ["5", "7", "9", "11"],
+    "correct_answer": "9",
+    "skill": "functions",
+    "subject": "maths",
+    "difficulty": "hard"
+  },
+  "math_hard_2": {
+    "id": "math_hard_2",
+    "text": "What is the solution to the system of equations: 2x + y = 7 and x - y = 1?",
+    "options": ["x=2, y=3", "x=3, y=1", "x=4, y=-1", "x=3, y=2"],
+    "correct_answer": "x=2, y=3",
+    "skill": "systems_of_equations",
+    "subject": "maths",
+    "difficulty": "hard"
+  },
+  "science_very_easy_1": {
+    "id": "science_very_easy_1",
+    "text": "What is the chemical symbol for water?",
+    "options": ["O2", "CO2", "H2O", "H2O2"],
+    "correct_answer": "H2O",
+    "skill": "chemistry_basics",
+    "subject": "science",
+    "difficulty": "very_easy"
+  },
+  "science_very_easy_2": {
+    "id": "science_very_easy_2",
+    "text": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "correct_answer": "Mars",
+    "skill": "astronomy_basics",
+    "subject": "science",
+    "difficulty": "very_easy"
+  },
+  "science_easy_1": {
+    "id": "science_easy_1",
+    "text": "What is the process by which plants make their food using sunlight?",
+    "options": ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+    "correct_answer": "Photosynthesis",
+    "skill": "biology_basics",
+    "subject": "science",
+    "difficulty": "easy"
+  },
+  "science_easy_2": {
+    "id": "science_easy_2",
+    "text": "What is the unit of electric current?",
+    "options": ["Volt", "Watt", "Ampere", "Ohm"],
+    "correct_answer": "Ampere",
+    "skill": "physics_basics",
+    "subject": "science",
+    "difficulty": "easy"
+  },
+  "science_medium_1": {
+    "id": "science_medium_1",
+    "text": "Which of these is NOT a noble gas?",
+    "options": ["Helium", "Neon", "Chlorine", "Argon"],
+    "correct_answer": "Chlorine",
+    "skill": "periodic_table",
+    "subject": "science",
+    "difficulty": "medium"
+  },
+  "science_medium_2": {
+    "id": "science_medium_2",
+    "text": "What type of energy transformation occurs in a solar panel?",
+    "options": ["Thermal to Electrical", "Chemical to Electrical", "Light to Electrical", "Mechanical to Electrical"],
+    "correct_answer": "Light to Electrical",
+    "skill": "energy",
+    "subject": "science",
+    "difficulty": "medium"
+  },
+  "science_hard_1": {
+    "id": "science_hard_1",
+    "text": "Which of the following is NOT a component of the cell theory?",
+    "options": ["All living things are made of cells", "Cells come from pre-existing cells", "Cells contain genetic material", "All cells are identical in structure"],
+    "correct_answer": "All cells are identical in structure",
+    "skill": "cell_biology",
+    "subject": "science",
+    "difficulty": "hard"
+  },
+  "science_hard_2": {
+    "id": "science_hard_2",
+    "text": "What is the acceleration of a 2kg object when a force of 10N is applied?",
+    "options": ["2 m/s²", "5 m/s²", "8 m/s²", "20 m/s²"],
+    "correct_answer": "5 m/s²",
+    "skill": "newton_laws",
+    "subject": "science",
+    "difficulty": "hard"
+  },
+  "python_very_easy_1": {
+    "id": "python_very_easy_1",
+    "text": "What symbol is used for comments in Python?",
+    "options": ["//", "/* */", "#", "<!-- -->"],
+    "correct_answer": "#",
+    "skill": "basic_syntax",
+    "subject": "python",
+    "difficulty": "very_easy"
+  },
+  "python_very_easy_2": {
+    "id": "python_very_easy_2",
+    "text": "What is the output of print('Hello, World!')?",
+    "options": ["Hello, World", "Hello, World!", "'Hello, World!'", "Error"],
+    "correct_answer": "Hello, World!",
+    "skill": "basic_syntax",
+    "subject": "python",
+    "difficulty": "very_easy"
+  },
+  "python_easy_1": {
+    "id": "python_easy_1",
+    "text": "Which of the following is a mutable data type in Python?",
+    "options": ["string", "tuple", "list", "int"],
+    "correct_answer": "list",
+    "skill": "data_types",
+    "subject": "python",
+    "difficulty": "easy"
+  },
+  "python_easy_2": {
+    "id": "python_easy_2",
+    "text": "What does the len() function do?",
+    "options": ["Returns the length of an object", "Returns the last element", "Returns the first element", "Converts to a list"],
+    "correct_answer": "Returns the length of an object",
+    "skill": "built_in_functions",
+    "subject": "python",
+    "difficulty": "easy"
+  },
+  "python_medium_1": {
+    "id": "python_medium_1",
+    "text": "What is the correct way to define a function in Python?",
+    "options": ["function myFunc():", "def myFunc[]:", "def myFunc():", "func myFunc():"],
+    "correct_answer": "def myFunc():",
+    "skill": "functions",
+    "subject": "python",
+    "difficulty": "medium"
+  },
+  "python_medium_2": {
+    "id": "python_medium_2",
+    "text": "What is the output of [1, 2, 3] + [4, 5, 6]?",
+    "options": ["[1, 2, 3, 4, 5, 6]", "[5, 7, 9]", "Error", "[1, 2, 3, [4, 5, 6]]"],
+    "correct_answer": "[1, 2, 3, 4, 5, 6]",
+    "skill": "list_operations",
+    "subject": "python",
+    "difficulty": "medium"
+  },
+  "python_hard_1": {
+    "id": "python_hard_1",
+    "text": "What will be the output of the following code?\n\nclass A:\n    def __init__(self):\n        self.x = 1\n\nclass B(A):\n    def __init__(self):\n        super().__init__()\n        self.y = 2\n\nobj = B()\nprint(obj.x + obj.y)",
+    "options": ["1", "2", "3", "Error"],
+    "correct_answer": "3",
+    "skill": "oop_inheritance",
+    "subject": "python",
+    "difficulty": "hard"
+  },
+  "python_hard_2": {
+    "id": "python_hard_2",
+    "text": "Which of the following is true about Python decorators?",
+    "options": ["Decorators are used for debugging only", "Decorators modify the behavior of a function without changing its code", "Decorators can only be applied to class methods", "Decorators require the function to be defined with the @static keyword"],
+    "correct_answer": "Decorators modify the behavior of a function without changing its code",
+    "skill": "decorators",
+    "subject": "python",
+    "difficulty": "hard"
+  },
+  "python_addition_1": {
+    "id": "python_addition_1",
+    "text": "What is the output of the code: x = 5; y = 3; print(x + y)?",
+    "options": ["2", "8", "5", "15"],
+    "correct_answer": "8",
+    "skill": "basic_syntax",
+    "subject": "python",
+    "difficulty": "very_easy"
+  },
+  "python_addition_2": {
+    "id": "python_addition_2",
+    "text": "Which of the following is the correct way to concatenate two strings in Python?",
+    "options": ["str1 + str2", "str1 & str2", "str1.append(str2)", "str1.concat(str2)"],
+    "correct_answer": "str1 + str2",
+    "skill": "basic_syntax",
+    "subject": "python",
+    "difficulty": "easy"
+  },
+  "python_loops_1": {
+    "id": "python_loops_1",
+    "text": "Which loop is guaranteed to execute at least once in Python?",
+    "options": ["for loop", "while loop", "do-while loop", "None of these"],
+    "correct_answer": "None of these",
+    "skill": "loops",
+    "subject": "python",
+    "difficulty": "medium"
+  },
+  "python_loops_2": {
+    "id": "python_loops_2",
+    "text": "What will be the output of this code: for i in range(5): print(i)",
+    "options": ["0 1 2 3 4", "1 2 3 4 5", "0 1 2 3 4 5", "Error"],
+    "correct_answer": "0 1 2 3 4",
+    "skill": "loops",
+    "subject": "python",
+    "difficulty": "easy"
+  },
+  "python_oop_1": {
+    "id": "python_oop_1",
+    "text": "What is self in Python class methods?",
+    "options": ["A keyword", "A variable name", "A reference to the current instance", "A data type"],
+    "correct_answer": "A reference to the current instance",
+    "skill": "oop_concepts",
+    "subject": "python",
+    "difficulty": "medium"
+  },
+  "python_oop_2": {
+    "id": "python_oop_2",
+    "text": "Which of the following is NOT a principle of Object-Oriented Programming?",
+    "options": ["Inheritance", "Encapsulation", "Polymorphism", "Fragmentation"],
+    "correct_answer": "Fragmentation",
+    "skill": "oop_concepts",
+    "subject": "python",
+    "difficulty": "hard"
+  },
+  "js_basics_1": {
+    "id": "js_basics_1",
+    "text": "How do you declare a variable in JavaScript?",
+    "options": ["var x;", "variable x;", "declare x;", "v x;"],
+    "correct_answer": "var x;",
+    "skill": "basic_syntax",
+    "subject": "javascript",
+    "difficulty": "very_easy"
+  },
+  "js_basics_2": {
+    "id": "js_basics_2",
+    "text": "What is the correct way to write a JavaScript array?",
+    "options": ["var colors = (1:'red', 2:'green', 3:'blue')", "var colors = ['red', 'green', 'blue']", "var colors = 'red', 'green', 'blue'", "var colors = {'red', 'green', 'blue'}"],
+    "correct_answer": "var colors = ['red', 'green', 'blue']",
+    "skill": "data_structures",
+    "subject": "javascript",
+    "difficulty": "easy"
+  },
+  "js_functions_1": {
+    "id": "js_functions_1",
+    "text": "What is the correct syntax for a JavaScript function?",
+    "options": ["function = myFunction() {}", "function:myFunction() {}", "function myFunction() {}", "myFunction() = function {}"],
+    "correct_answer": "function myFunction() {}",
+    "skill": "functions",
+    "subject": "javascript",
+    "difficulty": "very_easy"
+  },
+  "js_functions_2": {
+    "id": "js_functions_2",
+    "text": "Which statement correctly creates an arrow function?",
+    "options": ["function => {return true;}", "const func = function() => {return true;}", "const func = => {return true;}", "const func = () => {return true;}"],
+    "correct_answer": "const func = () => {return true;}",
+    "skill": "functions",
+    "subject": "javascript",
+    "difficulty": "medium"
+  },
+  "js_dom_1": {
+    "id": "js_dom_1",
+    "text": "Which method selects an element by its ID in JavaScript?",
+    "options": ["document.querySelector()", "document.getElementByName()", "document.getElementById()", "document.selectElement()"],
+    "correct_answer": "document.getElementById()",
+    "skill": "dom_manipulation",
+    "subject": "javascript",
+    "difficulty": "easy"
+  },
+  "js_dom_2": {
+    "id": "js_dom_2",
+    "text": "How do you add an event listener to an element in JavaScript?",
+    "options": ["element.addEventListener('click', function)", "element.attachEvent('click', function)", "element.onClick = function", "element.addEvent('click', function)"],
+    "correct_answer": "element.addEventListener('click', function)",
+    "skill": "dom_manipulation",
+    "subject": "javascript",
+    "difficulty": "medium"
+  },
+  "js_async_1": {
+    "id": "js_async_1",
+    "text": "Which function is used to delay execution in JavaScript?",
+    "options": ["delay()", "wait()", "setTimeout()", "pause()"],
+    "correct_answer": "setTimeout()",
+    "skill": "asynchronous",
+    "subject": "javascript",
+    "difficulty": "medium"
+  },
+  "js_async_2": {
+    "id": "js_async_2",
+    "text": "Which statement is true about Promises in JavaScript?",
+    "options": ["Promises are always executed immediately", "Promises represent a value that might be available now, later, or never", "Promises can only be used with async/await", "Promises always return a Boolean value"],
+    "correct_answer": "Promises represent a value that might be available now, later, or never",
+    "skill": "asynchronous",
+    "subject": "javascript",
+    "difficulty": "hard"
+  },
+  "math_advanced_1": {
+    "id": "math_advanced_1",
+    "text": "If f(x) = 3x² - 2x + 1, what is f'(x)?",
+    "options": ["3x² - 2", "6x - 2", "6x² - 2", "3x - 2"],
+    "correct_answer": "6x - 2",
+    "skill": "calculus",
+    "subject": "maths",
+    "difficulty": "hard"
+  },
+  "math_advanced_2": {
+    "id": "math_advanced_2",
+    "text": "What is the integral of 2x with respect to x?",
+    "options": ["x²", "x² + C", "2x² + C", "x² - C"],
+    "correct_answer": "x² + C",
+    "skill": "calculus",
+    "subject": "maths",
+    "difficulty": "hard"
+  },
+  "science_chemistry_1": {
+    "id": "science_chemistry_1",
+    "text": "What is the chemical formula for sodium chloride?",
+    "options": ["NaCl₂", "Na₂Cl", "NaCl", "N₂Cl"],
+    "correct_answer": "NaCl",
+    "skill": "chemistry_compounds",
+    "subject": "science",
+    "difficulty": "easy"
+  },
+  "science_physics_1": {
+    "id": "science_physics_1",
+    "text": "What is the SI unit of force?",
+    "options": ["Watt", "Joule", "Newton", "Pascal"],
+    "correct_answer": "Newton",
+    "skill": "physics_units",
+    "subject": "science",
+    "difficulty": "medium"
+  }
+}

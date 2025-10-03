@@ -1,0 +1,9 @@
+fastapi>=0.118.0
+firebase-admin>=6.3.0
+pydantic>=2.11.0
+python-dotenv>=1.0.0
+uvicorn>=0.37.0
+email-validator>=2.0.0  # For email validation
+pydantic[email]>=2.11.0  # For EmailStr support
+sqlalchemy>=2.0.0  # For SQL database support
+pymongo>=4.0.0  # For MongoDB support
