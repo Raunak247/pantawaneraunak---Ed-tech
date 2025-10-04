@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "email-validator": "^2.0.4",
+    "fastapi": "^0.0.8",
+    "firebase-admin": "^13.5.0",
+    "pydantic": "^0.0.1-security",
+    "python-dotenv": "^10.1.1",
+    "uvicorn": "^0.0.1-security"
+  }
+}

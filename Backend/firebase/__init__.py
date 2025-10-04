@@ -1,11 +1,4 @@
-"""
-Firebase Configuration Module
 
-This module handles Firebase initialization and configuration.
-Place your Firebase credentials in the credentials directory and update the path below.
-
-In production, use environment variables instead of file paths for security.
-"""
 
 import os
 import firebase_admin

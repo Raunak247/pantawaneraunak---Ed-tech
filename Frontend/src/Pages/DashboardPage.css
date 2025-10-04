@@ -1,0 +1,88 @@
+/* ============================================
+   FILE: src/components/DashboardPage.css
+   Dashboard Page Styles
+   ============================================ */
+
+.dashboard-page {
+  padding: 2rem 1rem;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.stat-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+
+.stat-detail {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.progress-section h3 {
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.progress-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem;
+}
+
+.progress-bar-full {
+  background: #e5e7eb;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.progress-bar-fill {
+  background: #9333ea;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  transition: width 0.3s;
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
