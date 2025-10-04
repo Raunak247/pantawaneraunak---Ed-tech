@@ -6,7 +6,18 @@ This guide helps frontend developers set up and interact with the Adaptive Learn
 
 1. **Run the server**:
 
-   **Option A: Run in foreground mode (for debugging)**
+   **Option A: One-command setup and run** (Recommended)
+   ```bash
+   ./run_backend.sh -b
+   ```
+   This comprehensive script:
+   - Creates the Python virtual environment if needed
+   - Installs all dependencies automatically
+   - Sets up configuration with in-memory database
+   - Starts the server in the background
+   - Shows server status and how to view logs
+
+   **Option B: Run in foreground mode (for debugging)**
    ```bash
    ./start_server.sh
    ```
@@ -15,7 +26,7 @@ This guide helps frontend developers set up and interact with the Adaptive Learn
    - Creates a `.env` file if needed
    - Starts the server on http://localhost:5000 in the foreground
 
-   **Option B: Run in background mode (better for frontend development)**
+   **Option C: Run in background mode**
    ```bash
    ./frontend_dev.sh
    ```

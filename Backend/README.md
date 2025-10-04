@@ -4,7 +4,24 @@ A FastAPI backend implementing a Bayesian Knowledge Tracing (BKT) algorithm for 
 
 ## Quick Start
 
-1. **For Frontend Developers**:
+1. **One-Command Setup & Run** (Recommended):
+   ```bash
+   # Run server in foreground with in-memory database
+   ./run_backend.sh
+   
+   # Or run in background
+   ./run_backend.sh -b
+   
+   # To use Firebase database instead of in-memory
+   ./run_backend.sh -f
+   
+   # To see all options
+   ./run_backend.sh --help
+   ```
+   This comprehensive script handles everything: virtual environment setup, 
+   dependency installation, environment configuration, and server startup.
+
+2. **For Frontend Developers**:
    ```bash
    # Option 1: Start the server in the foreground
    ./start_server.sh
@@ -16,7 +33,7 @@ A FastAPI backend implementing a Bayesian Knowledge Tracing (BKT) algorithm for 
    These scripts automatically set up and start the server with an in-memory database.
    See the [Frontend Developer Guide](docs/frontend-guide.md) for more details.
 
-2. **Manual Setup**:
+3. **Manual Setup**:
    ```bash
    python -m venv backend
    source backend/bin/activate  # On Windows: backend\Scripts\activate
