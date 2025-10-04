@@ -6,9 +6,14 @@ A FastAPI backend implementing a Bayesian Knowledge Tracing (BKT) algorithm for 
 
 1. **For Frontend Developers**:
    ```bash
+   # Option 1: Start the server in the foreground
    ./start_server.sh
+   
+   # Option 2: Start the server in the background (better for frontend development)
+   ./frontend_dev.sh  # Start the server in the background
+   ./frontend_start.sh  # Check the server status and access API
    ```
-   This script automatically sets up and starts the server with an in-memory database.
+   These scripts automatically set up and start the server with an in-memory database.
    See the [Frontend Developer Guide](docs/frontend-guide.md) for more details.
 
 2. **Manual Setup**:

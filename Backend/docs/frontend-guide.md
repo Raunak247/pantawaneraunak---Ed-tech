@@ -5,13 +5,35 @@ This guide helps frontend developers set up and interact with the Adaptive Learn
 ## Quick Setup
 
 1. **Run the server**:
+
+   **Option A: Run in foreground mode (for debugging)**
    ```bash
    ./start_server.sh
    ```
    This script:
    - Activates the Python virtual environment
    - Creates a `.env` file if needed
-   - Starts the server on http://localhost:5000
+   - Starts the server on http://localhost:5000 in the foreground
+
+   **Option B: Run in background mode (better for frontend development)**
+   ```bash
+   ./frontend_dev.sh
+   ```
+   This script:
+   - Starts the server in the background using nohup
+   - Logs output to server.log
+   - Configures in-memory database by default
+   - Returns control to terminal immediately
+
+   After starting the server in the background, you can check its status:
+   ```bash
+   ./frontend_start.sh
+   ```
+   This will:
+   - Check if the server is running
+   - Display the server log if needed
+   - Show available API endpoints
+   - Open API documentation in the browser
 
 2. **First time setup**:
    ```bash
