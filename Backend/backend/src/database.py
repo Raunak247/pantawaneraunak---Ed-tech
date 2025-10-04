@@ -307,7 +307,14 @@ class DatabaseManager:
         self.firebase_app = None
         
     async def connect(self):
-        if settings.firebase_credentials_path and not self.use_in_memory:
+        # First check if we're using in-memory to avoid Firebase credential checks
+        if self.use_in_memory or os.getenv('USE_IN_MEMORY') == 'true' or not settings.firebase_credentials_path:
+            self.use_in_memory = True
+            logger.info("Using in-memory database with fallback questions.")
+            return
+            
+        # Only try to connect to Firebase if we're not using in-memory and have credentials path
+        if settings.firebase_credentials_path:
             try:
                 # Use Firebase manager if available, otherwise initialize directly
                 try:
@@ -325,7 +332,9 @@ class DatabaseManager:
                                 'projectId': settings.firebase_project_id
                             })
                         else:
-                            raise FileNotFoundError(f"Firebase credentials file not found: {cred_path}")
+                            logger.warning(f"Firebase credentials file not found: {cred_path}. Switching to in-memory database.")
+                            self.use_in_memory = True
+                            return
                     elif firebase_admin._apps:
                         self.firebase_app = firebase_admin.get_app()
                     

@@ -37,6 +37,11 @@ class FirebaseManager:
         """Initialize Firebase with credentials"""
         if self._app:
             return
+            
+        # Check if we're using in-memory mode
+        if os.getenv('USE_IN_MEMORY', '').lower() == 'true':
+            # In memory mode, don't initialize Firebase
+            return None
         
         # Get credential path from environment variables or use default
         cred_path = os.getenv('FIREBASE_CREDENTIALS_PATH', 'firebase/credentials/firebase-credentials.json')
@@ -63,6 +68,9 @@ class FirebaseManager:
     @property
     def db(self):
         """Get Firestore database instance"""
+        if os.getenv('USE_IN_MEMORY', '').lower() == 'true':
+            return None
+        
         if not self._db:
             self.initialize()
         return self._db
@@ -70,6 +78,9 @@ class FirebaseManager:
     @property
     def app(self):
         """Get Firebase app instance"""
+        if os.getenv('USE_IN_MEMORY', '').lower() == 'true':
+            return None
+            
         if not self._app:
             self.initialize()
         return self._app

@@ -9,8 +9,13 @@ class Settings(BaseSettings):
     # db
     use_in_memory: bool = os.environ.get("USE_IN_MEMORY", "true").lower() == "true"
     
-    # Firebase
-    firebase_credentials_path: str = os.environ.get("FIREBASE_CREDENTIALS_PATH", "")
+    # Firebase (only used if use_in_memory is False)
+    @property
+    def firebase_credentials_path(self) -> str:
+        if self.use_in_memory:
+            return ""  # Don't need credentials when using in-memory database
+        return os.environ.get("FIREBASE_CREDENTIALS_PATH", "")
+        
     firebase_project_id: str = os.environ.get("FIREBASE_PROJECT_ID", "")
     
     # Fallback database
