@@ -1,30 +1,45 @@
 #!/bin/bash
 
-# frontend_start.sh - Script to start the Adaptive Learning Backend for frontend developers
-# This script bypasses Firebase credential checks completely
+# frontend_start.sh - Script to check status and provide information about the backend API
+# This script is designed to work alongside frontend_dev.sh
 
 echo "====================================="
-echo "  Adaptive Learning Backend Starter  "
-echo "====================================="
-echo "  FRONTEND DEVELOPMENT MODE  "
+echo "  Adaptive Learning Backend Status   "
 echo "====================================="
 
-# Activate the virtual environment
-source backend/bin/activate
+# Check if server is running
+if pgrep -f "python main.py" > /dev/null; then
+    echo "✅ API Server is RUNNING"
+    SERVER_PID=$(pgrep -f "python main.py")
+    echo "   Process ID: $SERVER_PID"
+    echo ""
+    echo "API is available at: http://localhost:5000"
+    echo "API Documentation: http://localhost:5000/docs"
+    echo ""
+    echo "Last few lines from the server log:"
+    echo "-----------------------------------"
+    tail -n 5 backend/server.log
+    echo "-----------------------------------"
+    echo ""
+    echo "📖 To view full logs: tail -f backend/server.log"
+    echo "🛑 To stop the server: pkill -f 'python main.py'"
 
-# Set environment variables to ensure in-memory database is used
-export USE_IN_MEMORY=true
-export FALLBACK_QUESTIONS_PATH=sample_questions.json
-
-# Start the server
-echo "Starting server in FRONTEND MODE (in-memory database)"
-echo "The API will be available at http://localhost:5000"
-echo "API Documentation is at http://localhost:5000/docs"
-echo "Press Ctrl+C to stop the server"
-echo ""
-
-# Change to the backend directory and run the server
-cd backend && python main.py
-
-# Deactivate the virtual environment when done
-deactivate
+    # Attempt to open the API docs in the default browser
+    echo ""
+    echo "Would you like to open the API documentation in your browser? (y/n)"
+    read -r response
+    if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]; then
+        if command -v xdg-open > /dev/null; then
+            xdg-open http://localhost:5000/docs &
+        elif command -v open > /dev/null; then
+            open http://localhost:5000/docs &
+        else
+            echo "Could not open browser automatically. Please visit http://localhost:5000/docs"
+        fi
+    fi
+else
+    echo "❌ API Server is NOT RUNNING"
+    echo ""
+    echo "To start the server, run: ./frontend_dev.sh"
+    echo ""
+fi
