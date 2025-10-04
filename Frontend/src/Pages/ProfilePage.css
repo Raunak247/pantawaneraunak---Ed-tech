@@ -1,0 +1,68 @@
+/* ============================================
+   FILE: src/components/ProfilePage.css
+   User Profile Page Styles
+   ============================================ */
+
+.profile-page {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-container {
+  max-width: 500px;
+  width: 100%;
+  background: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-avatar {
+  width: 4rem;
+  height: 4rem;
+  background: #2563eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: white;
+}
+
+.profile-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.profile-header p {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.profile-details .profile-field {
+  margin-bottom: 1rem;
+}
+
+.profile-field label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.25rem;
+}
+
+.profile-field p {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.profile-field p.small {
+  font-size: 0.8rem;
+}
