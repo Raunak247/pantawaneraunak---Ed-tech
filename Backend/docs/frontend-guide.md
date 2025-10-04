@@ -31,9 +31,10 @@ This guide helps frontend developers set up and interact with the Adaptive Learn
    ```
    This will:
    - Check if the server is running
-   - Display the server log if needed
-   - Show available API endpoints
-   - Open API documentation in the browser
+   - Display the process ID and status
+   - Show the last few lines of the server log
+   - Provide commands for viewing full logs
+   - Offer to open API documentation in the browser
 
 2. **First time setup**:
    ```bash
